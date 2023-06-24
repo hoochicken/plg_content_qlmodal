@@ -1,0 +1,9 @@
+/**
+ * @package     plg_content_qlmodal
+ *
+ * @copyright   Copyright (C) 2023 Mareike Riegel
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+div.fade.modal {display:none;}
+div.qlmodal.collapse{clear:both;}
+div.joomla-modal.modal.show{top:0;}

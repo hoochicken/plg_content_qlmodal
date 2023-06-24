@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="1.1" group="content" method="upgrade">
+    <name>PLG_CONTENT_QLMODAL</name>
+    <author>Mareike Riegel</author>
+    <creationDate>13. July 2023</creationDate>
+    <copyright>Copyright (C) 2023 ql.de All rights reserved.</copyright>
+    <authorEmail>mareike.riegel@ql.de</authorEmail>
+    <authorUrl>http://ql.de/</authorUrl>
+    <version>2.0.0</version>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <description>PLG_CONTENT_QLMODAL_DESCRIPTION</description>
+    <updateservers>
+        <server type="extension" priority="1" name="qlmodal - Updates">https://raw.githubusercontent.com/hoochicken/plg_content_qlmodal/main/_jupdate/plg_content_qlmodal.xml</server>
+    </updateservers>
+    <files>
+        <folder plugin="qlmodal">_jupdate</folder>
+        <folder plugin="qlmodal">css</folder>
+        <folder plugin="qlmodal">js</folder>
+        <folder plugin="qlmodal">html</folder>
+        <folder plugin="qlmodal">language</folder>
+        <filename plugin="qlmodal">qlmodal.php</filename>
+        <filename plugin="qlmodal">index.html</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_content_qlmodal.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_content_qlmodal.sys.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.plg_content_qlmodal.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.plg_content_qlmodal.sys.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+            <fieldset name="basic">
+                <field name="jQuery" type="radio" class="btn-group"
+                       label="PLG_CONTENT_QLMODAL_JQUERY_LABEL"
+                       description="PLG_CONTENT_QLMODAL_JQUERY_DESC"
+                       default="0"
+                       >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="bootstrap" type="radio" class="btn-group"
+                       label="PLG_CONTENT_QLMODAL_BOOTSTRAP_LABEL"
+                       description="PLG_CONTENT_QLMODAL_BOOTSTRAP_DESC"
+                       default="0"
+                       >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
+            <fieldset name="styles">
+                <field type="radio" name="useStyles" default="1" class="btn-group">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field type="color" name="background" label="PLG_CONTENT_QLMODAL_BACKGROUND_LABEL" description="PLG_CONTENT_QLMODAL_BACKGROUND_DESC" default="#ffffff" />
+                <field type="color" name="color" label="PLG_CONTENT_QLMODAL_COLOR_LABEL" description="PLG_CONTENT_QLMODAL_COLOR_DESC" default="#666666" />
+                <field type="color" name="hColor" label="PLG_CONTENT_QLMODAL_HCOLOR_LABEL" description="PLG_CONTENT_QLMODAL_HCOLOR_DESC" default="#666666" />
+                <field type="color" name="aColor" label="PLG_CONTENT_QLMODAL_ACOLOR_LABEL" description="PLG_CONTENT_QLMODAL_ACOLOR_DESC" default="#66f" />
+            </fieldset>
+		</fields>
+	</config>
+</extension>
